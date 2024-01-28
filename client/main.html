@@ -1,0 +1,34 @@
+<!-- client/main.html -->
+<head>
+  <title>Loan Management App</title>
+</head>
+
+<body>
+  <div class="container">
+    {{> mainLayout}}
+  </div>
+</body>
+
+<template name="mainLayout">
+  <div class="header">
+    <h1>Loan Management App</h1>
+  </div>
+  <div class="content">
+    {{> Template.dynamic template=currentDashboard}}
+  </div>
+</template>
+
+<template name="borrowerDashboard">
+  <h2>Borrower Dashboard</h2>
+  
+</template>
+
+<template name="lenderDashboard">
+  <h2>Lender Dashboard</h2>
+  
+</template>
+
+<template name="adminDashboard">
+  <h2>Admin Dashboard</h2>
+  
+</template>
